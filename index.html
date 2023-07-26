@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst Website Landing Page</title>
     <!-- favICON -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,7 +92,97 @@
 
     </header>
 
-    <main>
+    <main class="max-w-screen-xl mx-auto p-3 mt-8 font-lato">
+<!-- Deal of the day -->
+<section class="mt-24  font-lato">
+   <div class="flex justify-between">
+    <div class=" w-1/2">
+        <p class=" text-[#121212] font-extrabold text-5xl">Deal of the day</p>
+        <p class="mt-4 text-[#12121299] font-medium text-base ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+        <!-- countdown section -->
+            <div class="">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col p-2   rounded-box text-neutral-content">
+                      <span class="countdown  text-5xl text-[#121212] font-extrabold">
+                        <span style="--value:15;"></span>
+                      </span>
+                     <p class="font-medium text-base text-[#12121299]"> days</p>
+                    </div> 
+                    <div class="flex flex-col p-2   rounded-box text-neutral-content">
+                      <span class="countdown text-5xl text-[#121212] font-extrabold">
+                        <span style="--value:10;"></span>
+                      </span>
+                      <p class="font-medium text-base text-[#12121299]"> hours</p>
+                    </div> 
+                    <div class="flex flex-col p-2   rounded-box text-neutral-content">
+                      <span class="countdown text-5xl text-[#121212] font-extrabold">
+                        <span style="--value:24;"></span>
+                      </span>
+                      <p class="font-medium text-base text-[#12121299]"> min</p>
+                    </div> 
+                    <div class="flex flex-col p-2   rounded-box text-neutral-content">
+                      <span class="countdown text-5xl text-[#121212] font-extrabold">
+                        <span style="--value:35;"></span>
+                      </span>
+                      <p class="font-medium text-base text-[#12121299]"> sec</p>
+                    </div>
+                  </div>
+            </div>
+
+   </div>
+
+<!-- review section -->
+<div class="grid gap-3 grid-cols-4">
+    <div class="">
+        <img src="./images/fruit6.png" alt="">
+        <h1 class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</h1>
+        <small class="text-[#12121299] font-medium text-base">Apples</small>
+        <p>
+            <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+        </p>
+        <h2 cl="">
+<!-- Open the modal using ID.showModal() method -->
+<button class=" text-[#F85559] font-bold text-xl" onclick="my_modal_5.showModal()">Details</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box  ">
+    <img class=" mx-auto" src="./images/fruit6.png" alt="">
+    <h1 class="my-4  text-center text-[#121212] font-bold text-2xl ">12.90$ - 18.85$</h1>
+    <p class="text-center text-[#12121299] font-medium text-base">Apples</p>
+    <p class="">
+        <div class="rating ml-44 mt-2">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+    </p>
+    <div class="ml-36 mt-4">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="--20  btn  bg-[#F85559] text-[#fff]">Buy Now</button>
+    </div>
+  </form>
+</dialog>
+
+        </h2>
+    </div>
+</div>
+
+
+
+
+</section>
+
+
+
 
     </main>
 
